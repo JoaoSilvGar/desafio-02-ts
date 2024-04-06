@@ -1,5 +1,6 @@
 import { Layout } from "./components/Layout";
 import { Box, Button, Card, Center, ChakraProvider, Heading, Input, SimpleGrid } from "@chakra-ui/react"
+import { login } from "./services/login";
 
 
 // const Box = styled.div`
@@ -26,7 +27,7 @@ function App() {
               <Heading textAlign={"center"}>Faça o login</Heading>
               <Input placeholder="Email" borderRadius={"25px"} />
               <Input placeholder="Password" borderRadius={"25px"} />
-              <Button bg={"#1E192C"} color={"white"} width={"100%"}>Entrar</Button>
+              <Button onClick={login} bg={"#1E192C"} color={"white"} width={"100%"}>Entrar</Button>
             </SimpleGrid>
           </Box>
         </Layout>
